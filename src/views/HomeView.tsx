@@ -1,3 +1,7 @@
+import { ToastContainer } from "react-toastify";
+import ContactForm from "../components/home/ContactForm";
+import Services from "../components/home/Services";
+import SobreNosotros from "../components/home/SobreNosotros";
 
 export default function HomeView() {
   return (
@@ -21,12 +25,14 @@ export default function HomeView() {
         </div>
 
         <div className="p-3 lg:p-0 space-y-14">
-          {/* <SobreNosotros/>
+          <SobreNosotros/>
 
           <Services/>
 
-          <ContactForm/> */}
+          <ContactForm/>
         </div>
+
+        <ToastContainer/>
     </div>
   )
 }
